@@ -1,7 +1,7 @@
 # OPI-South-Central-Andes
 Analysis of orographic precipitation and isotopes in the vicinity of the South-Central Andes (latitude 37.6 to 32.4 S)
 
-This work is provided as support for an investigation of the Cenozoic evolution of topography in Argentina at the latitude of 35.5 S (Fennell et al., 2022). The Fennell et al. study is based on a detailed stratigraphic record (55 to 10 Ma) of the hydrogen isotopic composition, \delta^2H, of ancient precipitation, as recorded in samples of hydrated volcanic glass collected near Malargüe, Argentina (35.5°S). 
+This work is provided as support for an investigation of the Cenozoic evolution of topography in Argentina at the latitude of 35.5 S (Fennell et al., 2022). The Fennell et al. study is based on a detailed stratigraphic record (55 to 10 Ma) of the hydrogen isotopic composition of ancient precipitation, as recorded in samples of hydrated volcanic glass collected near Malargüe, Argentina (35.5°S). 
 
 Our analysis here is based on a compilation of hydrogen and oxygen isotopic data for modern meteoric water from a 365 x 575 km area surrounding Malargüe. The isotope data are made available here in an Excel spreadsheet, entitled “Mendoza area water isotopes (32-38S) 10 Sep 2019.xlsx”.
 
