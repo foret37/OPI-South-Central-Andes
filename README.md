@@ -16,7 +16,7 @@ September 13, 2022
 
 References
 Brandon, M.T., 2022, MATLAB Programs for the Analysis of Orographic Precipitation and Isotopes, with Implications for the Study of Paleotopography, doi: 10.5281/zenodo.7076557, https://github.com/foret37/OPI-Orographic-Precipitation-and-Isotopes/tree/v3.6.002.
-![image](https://user-images.githubusercontent.com/10212758/190049262-32184074-43b3-4302-bd8b-729a079189d0.png)
 
-Fennell, L.M., Brandon, M.T., and Hren, M.T., 2022, Cenozoic topographic evolution of the Southern Central Andes foreland region as revealed by hydrogen stable isotopes in hydrated volcanic glass (in review). ![image](https://user-images.githubusercontent.com/10212758/190049169-c5515c38-e7db-4ba6-9ea3-c378ec420f90.png)
+Fennell, L.M., Brandon, M.T., and Hren, M.T., 2022, Cenozoic topographic evolution of the Southern Central Andes foreland region as revealed by hydrogen stable isotopes in hydrated volcanic glass (in review). 
+
 
