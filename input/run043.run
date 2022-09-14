@@ -1,0 +1,101 @@
+% RUN FILE FOR OPI PROGRAMS
+%... Run title:
+run 043, Mendoza area, opi 3.6, two wind, leeside evaporation, fit for kappa
+% July 24, 2022: Modified to account for new termination criterion (see details below).
+% This was done just before the start of the cycle 8 for run043. 
+
+%... Set parallel mode versus serial mode for opiFit
+% 0: serial mode
+% 1: parallel mode
+1
+
+%... Enter two path names for data files, each on a separate line, 
+% to account for runs on two different computers (e.g., local computer, cluster computer).
+% Set one path name to "no" if only one path is needed.
+~/project/OPI/data Mendoza
+~/Dropbox/OPI Mendoza/data Mendoza
+
+%... File for topographic data. The file should be placed in the directory 
+% set above for the dataPath variable.
+Mendoza topography_Gebco1km_-85,-43,-42.5,-27.5.mat
+
+%... Size of cosine window, as fraction of grid size (0=< rTukey <=1)
+% For example, rTukey = 0.25 (recommended value) will create a cosine
+% taper along each margin of the grid, with the taper width equal to 
+% rTukey/2 (0.125) times the dimension of the grid in each direction.
+% For no window, set rTukey = 0.
+% Recommended value: 0.25
+0.25
+
+%... File for water-isotope data. The file should be placed in the directory 
+% set above for the dataPath variable.
+Mendoza area water isotopes (32-38S) 10 Sep 2019.xlsx
+
+%... File for continental-divide file, which is used in opiPlots and opiMaps.
+% The file should be placed in the directory set above for the dataPath variable.
+% Note that this file is required for the two-wind versions of the opi programs,
+% and must extend beyond the limits of the topographic grid.
+% Set to "no" if the file is not available or if a plot of the divide is not wanted.
+Mendoza_contDivideLonLat.mat
+
+%... Set limits for figures showing maps [minLon, maxLon, minLat, maxLat]
+% Use 0,0,0,0 to show full domain. 
+% Limits for Malargue study area, as specified by Lucas Fennell, July 2022 
+-75, -63, -39, -31;
+
+%... Set path origin, lonPath0, latPath0, which defines the origin of cross sections. 
+% Set to "map" to tell the program to set this point to the map origin.
+% lon, lat for Malargue study area
+-69.61, -35.14
+
+%... Set search parameters used by the fminCRS function. 
+% The CRS3 search is controlled by 2 parameters.
+% mu is a factor that determines the size of the search set, where
+% mSet = ceil(mu*(nFree + 1)), with nFree as the number of free parameters. 
+% epsilon0 defines the stopping criterion, where
+% epsilon0 > stdev(f(1:mSet)) < epsilon0, with f(1:mSet) as the mSet 
+% of candidate solutions with the smallest f values, 
+% and stdev is the standard deviation function. 
+% Recommended values: mu = 10, epsilon0 = 1e-4.
+10, 1e-4
+
+%... File containing solutions for initializing or starting best-fit search
+% Set to "no" if initial solutions are not to be used. 
+07_opiFit_Solutions.txt
+
+% Parameters: 
+% Precipitation state #1: 
+% U (m/s), azimuth (deg), T0 (K), M (dimensionless), kappa (m^2/s), tauC (s), ...
+% d2H0 (permil), dd2H0dLat (permil/deg lat), fP (fraction), f1 (fraction)
+% Precipitation state #2:
+% U (m/s), azimuth (deg), T0 (K), M (dimensionless), kappa (m^2/s), tauC (s), ...
+% d2H0 (permil), dd2H0dLat (permil/deg lat), fP (fraction)
+% Note that the latitudinal isotope gradient, dd2H0dLat, is applied using 
+% the absolute value of the latitude, and that dd2H0dLat is usually negative. 
+
+%... Parameter labels, which are used to designate axis labels for
+% in the opiPairsPlot program. Note the label must be separated by
+% the character: "|" . 
+U (m/s)|azimuth|T_0 (K)|M|\kappa (km^2/s)|\tau_c (s)|\delta^{2}_0 (‰)|d\delta^{2}_0/d\phi (‰/°)|f_P|fraction|U (m/s)|azimuth|T_0 (K)|M|\kappa (km^2/s)|\tau_c (s)|\delta^{2}_0 (‰)|d\delta^{2}_0/d\phi (‰/°)|f_P
+
+%... Exponents for "power of 10" scaling factors for each
+% parameter, which are used for the opiPairsPlot program. 
+% For example, an exponent set to 3 means that the parameter value 
+% will be multiplied by 10^-3 before plotting.
+0, 0, 0, 0, 6, 0, -3, -3, 0, 0, 0, 0, 0, 0, 6, 0, -3, -3, 0
+
+%... Constraints for parameter search
+% Azimuth constraints can use negative values in order to span across north 
+% (e.g., use: -30 and +30 to span the azimuth range 330 to 30 degrees).
+0.1,  35, 270,   0,   0,    0, -60e-3, -15e-3, 0, 0, 0.1, 215, 270,   0,   0,    0, -60e-3, -15e-3, 0
+ 20, 145, 300, 1.2, 1e6, 2500,   0e-3,   0e-3, 1, 1,  20, 325, 300, 1.2, 1e6, 2500,  0e-3,   0e-3, 1
+
+
+%... Best-Fit Solution
+% Finish time: 25-Jul-2022 05:03:55
+% Reduced chi-square: 2.33505
+% Degrees of freedom: 178
+% Number of primary samples in wet locations: 197
+% Number of primary samples: 197
+% Best-fit parameters:
+1.95495	91.3531	291.215	0.052755	17.0072	0.0158616	-0.0151117	-0.00360092	0.999903	0.289365	3.0204	233.228	289.614	0.265313	72557.6	250.814	-0.00788753	-0.00450388	0.975209
