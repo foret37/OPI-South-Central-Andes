@@ -4,6 +4,12 @@ authors:
 - family-names: "Brandon"
   given-names: "Mark Thomas"
   orcid: "https://orcid.org/0000-0002-9703-2038"
+- family-names: "Fennell"
+  given-names: "Lucas Martin"
+  orcid: "https://orcid.org/0000-0002-7377-8687"
+- family-names: "Hren"
+  given-names: "Michael Thomas"
+  orcid: "https://orcid.org/0000-0002-2866-88
 title: "Analysis of orographic precipitation and isotopes in the vicinity of the South-Central Andes (latitude 37.6 to 32.4 S)"
 version: OPI-SCA 1.0.000
 doi: 10.5281/zenodo.7077390
