@@ -3,7 +3,7 @@ Analysis of orographic precipitation and isotopes in the vicinity of the South-C
 
 This work is provided as support for an investigation of the Cenozoic evolution of topography in Argentina at the latitude of 35.5 S (Fennell et al., 2022). The Fennell et al. study is based on a detailed stratigraphic record (55 to 10 Ma) of the hydrogen isotopic composition of ancient precipitation, as recorded in samples of hydrated volcanic glass collected near Malargüe, Argentina (35.5°S). 
 
-Our analysis here is based on a compilation of hydrogen and oxygen isotopic data for modern meteoric water from a 365 x 575 km area surrounding Malargüe. The isotope data are made available here in an Excel spreadsheet, entitled “Mendoza area water isotopes (32-38S) 10 Sep 2019.xlsx”.
+Our analysis is based on a compilation of hydrogen and oxygen isotopic data for modern meteoric water from a 365 x 575 km area surrounding Malargüe. The isotope data are made available here in an Excel spreadsheet, entitled “Mendoza area water isotopes (32-38S) 10 Sep 2019.xlsx”.
 
 The compilation contains isotope analyses for 589 unique locations, of which 83 are new, and 506 are from the published literature. Our compilation is focused on samples that are representative of the long-term average of precipitation isotopes in the vicinity of the sample location. We distinguish between “local” samples, where precipitation was collected at a single point, and “catchment” samples, where water samples were collected from rivers. 
 
